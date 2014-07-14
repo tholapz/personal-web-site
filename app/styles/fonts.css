@@ -1,0 +1,15 @@
+@font-face {
+	font-family: 'coolvetica-rg';
+	src: url('fonts/coolvetica rg.eot');
+	src: local('☺'), url('fonts/coolvetica rg.woff') format('woff'), url('fonts/coolvetica rg.ttf') format('truetype'), url('fonts/coolvetica rg.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Conv_Dolce Vita';
+	src: url('fonts/Dolce Vita.eot');
+	src: local('☺'), url('fonts/Dolce Vita.woff') format('woff'), url('fonts/Dolce Vita.ttf') format('truetype'), url('fonts/Dolce Vita.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
