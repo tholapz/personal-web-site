@@ -3,51 +3,45 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TholapzCom</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Kamol</title>
+        <meta name="description" content="JavaScript Developer">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <meta property="og:title" content="Kamol Treewatchararat" />
+        <meta property="og:url" content="http://www.tholapz.com" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="http://www.tholapz.com/images/profile.jpg" />
+        <meta property="og:description" content="I have helped several companies building great products interfacing with hundreds of thousands users world wide. My goal is to create great business value using my proven expertise in agile, test-driven software development. A good team player, I emphasize communication within the team and value inputs from the people I work with." />
+
+
+        <link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
         <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-
+        <div div="modal"></div>
 
         <div class="container">
             <div class="header">
-                <h1 class="text-center">Kamol Treewatchararat</h1>
-                <hr/>
-                <ul class="nav nav-pieces">
-                    <li class="active"><a href="#home">Home</a></li>
-                    <li><a href="#resume">Resume</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#github">Github</a></li>
-                    <li><a href="#blogs">Blogs</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-                <hr/>
+                
             </div>
             <div id="content">
 
             </div>
         </div>
 
-
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
             function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
             e=o.createElement(i);r=o.getElementsByTagName(i)[0];
             e.src='//www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
+            ga('create','UA-41400005-1');ga('send','pageview');
         </script>
 
         <!-- build:js scripts/vendor.js -->
@@ -83,6 +77,10 @@
         <script src="scripts/views/blogs.js"></script>
         <script src="scripts/views/contact.js"></script>
         <script src="scripts/models/contact.js"></script>
+        <script src="scripts/views/Header.js"></script>
+        <script src="scripts/models/projects.js"></script>
+        <script src="scripts/collections/projects.js"></script>
+        <script src="scripts/views/modal.js"></script>
         <!-- endbuild -->
 </body>
 </html>

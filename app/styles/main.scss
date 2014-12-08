@@ -14,10 +14,19 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 body {
     padding-top: 20px;
     padding-bottom: 20px;
+    font-family: 'Droid Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #f40f32;
 }
 
 a {
     color: inherit;
+}
+
+a:hover {
+    text-decoration:none;
 }
 
 $nav-pieces-active-link-hover-color: #f40f32;
@@ -33,6 +42,8 @@ $nav-pieces-active-link-hover-color: #f40f32;
 
     // Active state
     &.active > a {
+        pointer-events: none;
+        cursor: default;
       &,
       &:hover,
       &:focus {
@@ -93,6 +104,26 @@ $nav-pieces-active-link-hover-color: #f40f32;
 
 .marketing p + h4 {
     margin-top: 28px;
+}
+.prj {
+    margin-bottom: 50px;
+    .full-image {
+        width: 100%;
+        padding: 4px;
+        box-shadow: 1px 1px 2px;
+    }
+}
+
+
+.skill-list {
+    list-style-type: none;
+    padding-left: 0;
+    &>li {
+        display: inline-block;
+        padding: 10px;
+        background: #eee;
+        margin: 2px;
+    }
 }
 
 /* Responsive: Portrait tablets and up */

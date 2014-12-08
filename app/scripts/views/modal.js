@@ -5,9 +5,9 @@ TholapzCom.Views = TholapzCom.Views || {};
 (function () {
     'use strict';
 
-    TholapzCom.Views.Resume = Backbone.View.extend({
+    TholapzCom.Views.Modal = Backbone.View.extend({
 
-        template: JST['app/scripts/templates/resume.ejs'],
+        template: JST['app/scripts/templates/modal.ejs'],
 
         tagName: 'div',
 
@@ -18,12 +18,11 @@ TholapzCom.Views = TholapzCom.Views || {};
         events: {},
 
         initialize: function () {
-            this.render();
+            this.listenTo(this.model, 'change', this.render);
         },
 
         render: function () {
-            this.$el.html(this.template());
-            return this;
+            this.$el.html(this.template(this.model.toJSON()));
         }
 
     });

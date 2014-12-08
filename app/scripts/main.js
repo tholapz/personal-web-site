@@ -8,50 +8,33 @@ window.TholapzCom = {
     Routers: {},
     init: function () {
         'use strict';
-        // Instantiate the router
-        var app_router = new TholapzCom.Routers.Router;
 
-        app_router.on('route:home', function() {
-            var view = new TholapzCom.Views.Home;
-            $("#content").html(view.el);
+        TholapzCom.Controller = new Object;
+        TholapzCom.Controller.router = new TholapzCom.Routers.Router({
+            controller: TholapzCom.Controller
+        });
+        TholapzCom.Controller.header = new TholapzCom.Views.Header({
+            controller: TholapzCom.Controller
+        });
+        var fatloot = new TholapzCom.Models.Projects({
+            name: 'Fat loot',
+            detail: 'University of Southern California Advanced Game Project',
+            url: 'http://www.fatlootgame.com/',
+            image: 'http://www.tholapz.com/images/FatLoot3.png',
+            remark: ''
         });
 
-        app_router.on('route:resume', function() {
-            var view = new TholapzCom.Views.Resume;
-            $("#content").html(view.el);
-
-        });
-
-        app_router.on('route:projects', function() {
-            var view = new TholapzCom.Views.Projects;
-            $("#content").html(view.el);
-
-        });
-
-        app_router.on('route:github', function() {
-            var view = new TholapzCom.Views.Github;
-            $("#content").html(view.el);
-
-        });
-
-        app_router.on('blogs', function() {
-            var view = new TholapzCom.Views.Blogs;
-            $("#content").html(view.el);
-
-        });
-
-        app_router.on('contact', function() {
-            var view = new TholapzCom.Views.Contact;
-            $("#content").html(view.el);
-
-        });
-
+        TholapzCom.Controller.projects = new TholapzCom.Collections.Projects([fatloot]);
+        
         // Start Backbone history a necessary step for bookmarkable URL's
-        Backbone.history.start({pushState: true});
+        Backbone.history.start({pushState:false});
     }
 };
 
 $(document).ready(function () {
     'use strict';
+    String.prototype.capitalize = function(){
+        return this.charAt(0).toUpperCase() + this.slice(1);
+    }
     TholapzCom.init();
 });

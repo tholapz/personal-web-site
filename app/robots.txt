@@ -1,3 +1,6 @@
 # robotstxt.org
 
 User-agent: *
+Disallow: /tholapz1.0/
+Disallow: /GhostData.json
+Disallow: /apt360/
