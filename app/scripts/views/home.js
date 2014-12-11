@@ -13,7 +13,7 @@ TholapzCom.Views = TholapzCom.Views || {};
 
         id: '',
 
-        className: 'jumbotron',
+        className: '',
 
         events: {},
 
