@@ -126,8 +126,15 @@ $nav-pieces-active-link-hover-color: #f40f32;
     }
 }
 
-/* Blog view*/
-
+/* Story view*/
+.my-story {
+    ul {
+      padding-left: 0px;
+      > li {
+        list-style: none;
+      }
+    }
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

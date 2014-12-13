@@ -15,7 +15,8 @@ TholapzCom.Routers = TholapzCom.Routers || {};
             "projects": "projects",
             "github": "github",
             "blogs": "blogs",
-            "contact": "contact"
+            "contact": "contact",
+            "story": "story"
         },
         initialize: function(options) {
             this.controller = options.controller;
@@ -37,6 +38,9 @@ TholapzCom.Routers = TholapzCom.Routers || {};
         },
         home: function() {
             this.setCurrentView('Home');
+        },
+        story: function() {
+            this.setCurrentView('Story');
         },
         page: function(pageName) {
             this.setCurrentView(pageName);
