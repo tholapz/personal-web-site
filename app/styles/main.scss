@@ -3,6 +3,9 @@ $icon-font-path: "/bower_components/sass-bootstrap/fonts/";
 @import 'sass-bootstrap/lib/bootstrap';
 @import 'fonts.css';
 
+html {
+    overflow-y: scroll;
+}
 .browsehappy {
     margin: 0.2em 0;
     background: #ccc;
